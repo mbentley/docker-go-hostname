@@ -10,4 +10,6 @@ FROM scratch
 
 COPY --from=build /app/main /main
 
+USER 9999
+
 CMD ["/main"]
